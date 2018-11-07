@@ -45,7 +45,7 @@ def get_content(url):
 
 def db_connect():
     try:
-        db = pymysql.connect('localhost', 'root', 'Teamo=0112', 'spider', charset='utf8mb4')
+        db = pymysql.connect('***', '***', '***', '***', charset='utf8mb4')
         return db
     except Exception as e:
         print('db connect fail,e:{}\t{}'.format(str(e), str(datetime.datetime.now())))
